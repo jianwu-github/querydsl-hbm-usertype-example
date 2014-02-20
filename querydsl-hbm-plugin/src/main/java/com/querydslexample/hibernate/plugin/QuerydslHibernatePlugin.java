@@ -61,7 +61,7 @@ public class QuerydslHibernatePlugin extends AbstractMojo {
 
             HibernateDomainExporter theExporter = new HibernateDomainExporter(
                             prefix, targetFolder, theConfiguration);
-            theExporter.setUnknownAsEntity(false);
+            theExporter.setUnknownAsEntity(unknownAsEntity);
             theExporter.execute();
         } catch (Exception e) {
             throw new MojoExecutionException(

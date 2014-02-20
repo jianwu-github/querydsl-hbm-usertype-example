@@ -18,6 +18,7 @@ public class Subscriber {
     @QueryType(PropertyType.SIMPLE)
     private FacebookId facebookId;
 
+    @QueryType(PropertyType.NONE)
     private InternalAttr internalAttr;
 
     public Subscriber() {
